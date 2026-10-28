@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Q2 Drill2</title>
+</head>
+<body>
+     <main class="container py-5">
+        <section class="club-card">
+
+            <h1 class="text-center mb-2">Ever After High</h1>
+            <p class="subtitle text-center mb-4">
+                Royalty, Rebels, and New Stories
+            </p>
+
+            <h2 class="mb-3">Add a New Club Member</h2>
+
+            <form class="mb-4">
+                <div class="mb-3">
+                    <label for="firstname" class="form-label">First name</label>
+                    <input type="text" id="firstname" class="form-control"
+                        placeholder="Enter first name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Last name</label>
+                    <input type="text" id="lastname" class="form-control"
+                        placeholder="Enter last name">
+                </div>
+
+                <button type="button" py-click="checkresult"
+                    class="btn submit-btn w-100">
+                    Add Member
+                </button>
+            </form>
+
+            <div id="output" class="results-box">
+                     Enter a first and last name, then select Add Member.
+            </div>
+
+        </section>
+    </main>
+
+    <script type="py" src="main.py"></script>
+
+</body>
+</html>
